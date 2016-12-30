@@ -16,7 +16,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Droid Serif", serif;
   color: #333333;
   background-color: white;
   /* prevent ie from showing the horizontal scrollbar */
@@ -113,10 +113,12 @@ main.slide-out .cd-overlay {
   max-width: 768px;
 }
 .cd-section h2 {
+  font-family: "Droid Sans", sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   margin-bottom: 1em;
   font-size: 20px;
-  font-size: 48px;
+  font-size: 1.25rem;
 }
 .cd-section p {
   line-height: 1.4;
@@ -131,7 +133,7 @@ main.slide-out .cd-overlay {
 }
 @media only screen and (min-width: 1200px) {
   .cd-section {
-    padding: 4em;
+    padding: 6em;
   }
   .cd-section h2 {
     margin-bottom: 2em;
@@ -149,6 +151,7 @@ header {
 header h1 {
   font-size: 30px;
   font-size: 1.875rem;
+  font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: .4em;
@@ -158,23 +161,6 @@ header p {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #93861d;
-}
-
-.main-head {
-  font-size: 24px;
-  color: #999;
-  font-weight: 100;
-  margin-bottom: 50px;
-}
-
-#cd-team .cd-container .main-head img{
-   display: inline;
-    margin-bottom: 30px;
-    width: auto;
-}
-
-.main-head h2 {
-  margin-bottom: 20px;
 }
 
 .cd-placeholder-1 {
@@ -193,11 +179,11 @@ header p {
   max-width: 880px;
 }
 #cd-team h2 {
-  color: #333;
+  color: #1a2f2a;
 }
 #cd-team li {
   margin-bottom: 2em;
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: 0 0 10px rgba(92, 75, 81, 0);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -215,7 +201,7 @@ header p {
 #cd-team img {
   display: block;
   width: 100%;
-  border-radius: 0;
+  border-radius: .25em .25em 0 0;
 }
 #cd-team .cd-img-overlay {
   position: absolute;
@@ -223,18 +209,12 @@ header p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(126, 185, 48, 0.9);
+  background: rgba(92, 75, 81, 0.9);
   opacity: 0;
-  border-radius: 0;
+  border-radius: .25em .25em 0 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-#cd-team .cd-img-overlay img{
-  left: 36%;
-    position: absolute;
-    top: 44%;
-    width: auto;
 }
 #cd-team .cd-img-overlay span {
   position: absolute;
@@ -250,16 +230,18 @@ header p {
   color: #FFF;
 }
 #cd-team .cd-member-info {
-  height: 94px;
+  height: 80px;
   background: #FFF;
   text-align: center;
+  font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   padding-top: 20px;
-  border-radius: 0;
+  border-radius: 0 0 .25em .25em;
   color: #757575;
 }
 #cd-team .cd-member-info span {
   display: block;
+  font-family: "Droid Serif", serif;
   font-weight: normal;
   color: #999999;
   font-size: 14px;
@@ -286,6 +268,7 @@ header p {
   overflow-y: auto;
   /* smooth scrolling on mobile phones and tablets */
   -webkit-overflow-scrolling: touch;
+  background: #5c4b51;
   z-index: 1;
   /* this how we move the author bio section off the canvas */
   -webkit-transform: translateX(270px);
@@ -309,9 +292,7 @@ header p {
   transform: translateX(0);
 }
 .cd-member-bio .cd-member-bio-pict {
-  margin: 30px 0 15px;
-    position: relative;
-    text-align: center;
+  position: relative;
 }
 .cd-member-bio .cd-member-bio-pict::after {
   /* gradient at the bottom of the image - same color of the background of the section */
@@ -321,25 +302,22 @@ header p {
   left: 0;
   width: 100%;
   height: 80px;
+  background: -webkit-linear-gradient( bottom , #5c4b51, rgba(92, 75, 81, 0));
+  background: linear-gradient(to top, #5c4b51, rgba(92, 75, 81, 0));
 }
 .no-cssgradients .cd-member-bio .cd-member-bio-pict::after {
   display: none;
 }
 .cd-member-bio img {
-   border: 10px solid rgb(255, 255, 255);
-    display: inline;
-    width: 170px;
+  width: 100%;
+  display: block;
 }
-
 .cd-member-bio .cd-bio-content {
   padding: 1em;
-  color: #333;
-}
-
-.cd-member-bio .cd-bio-content h1{
-  margin-bottom: 20px;
+  color: #FFF;
 }
 .cd-member-bio .cd-bio-content h1 {
+  font-family: "Droid Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -351,8 +329,7 @@ header p {
   font-size: 0.875rem;
   margin: 1em 0;
   line-height: 1.4;
-  color: #999;
-  text-align: center;
+  color: #d7cfd2;
 }
 @media only screen and (min-width: 768px) {
   .cd-member-bio {
@@ -368,7 +345,7 @@ header p {
   }
   .cd-member-bio .cd-bio-content p {
     line-height: 1.6;
-    margin: 1.5em 0;
+    margin: 2em 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -394,7 +371,7 @@ header p {
   }
   .cd-member-bio .cd-bio-content h1 {
     font-size: 40px;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .cd-member-bio .cd-bio-content p {
     font-size: 16px;
@@ -430,8 +407,8 @@ header p {
 }
 @media only screen and (min-width: 1200px) {
   .cd-member-bio-close {
-    right: 25px;
-    top: 8px;
+    right: 20px;
+    top: 20px;
   }
 }
 
@@ -441,7 +418,7 @@ header p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(126, 185, 48, 0.8);
+  background: rgba(138, 190, 178, 0.8);
   cursor: pointer;
   display: none;
 }
@@ -523,6 +500,7 @@ body {
 }
 h1 {
   text-align:center;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 28px;
 }
 p{
@@ -537,7 +515,9 @@ p{
   width:100%;
   background:#fff;
   height:35px;
-  border-radius: 0;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
   -webkit-transition:0.4s linear;
   -moz-transition:0.4s linear;
   -ms-transition:0.4s linear;
@@ -585,6 +565,9 @@ width:180px;
   height:35px;
   width:0px;
   background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
 }
 
 .skill-bar-percent {
@@ -596,11 +579,4 @@ width:180px;
   line-height:35px;
   color:#ffffff;
   color:rgba(0, 0, 0, 0.4);
-}
-
-.skills-link {
-   color: rgb(153, 153, 153); 
-   font-weight: normal; 
-   margin: 10px; 
-   display: inline-block;
 }
